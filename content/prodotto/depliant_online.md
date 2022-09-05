@@ -1,0 +1,12 @@
+---
+title: "Depliant Online"
+short_description: "Il catalogo smart, formato App"
+date: 2018-01-03T17:43:14+01:00
+image: "/img/prodotti/scheda/slide-depliant.png"
+link: "https://www.depliant.online/"
+highlight: true
+draft: false
+---
+Con depliants online è possibile caricare tutti i contenuti di un catalogo per presentazioni efficaci e ad alto impatto. L'App gestisce contenuti multimediali (video, foto, sliders) e può essere integrato con database esistenti per aggiornare i dati in tempo reale. Funziona anche senza connessione Internet ed è compatibile con tutti i sistemi operativi.
+**E' l'evoluzione del catalogo tradizionale**, uno strumento che permette alla forza di vendita di presentare prodotti e servizi al meglio delle proprie potenzialità. 
+Vai sul [sito](https://www.depliant.online/) e scopri tutte le funzionalità per trasformare classiche brochure e cataloghi in strumenti di vendita più accattivanti.

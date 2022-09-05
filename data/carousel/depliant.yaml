@@ -1,0 +1,10 @@
+weight: 4
+title: "Depliant Online"
+description: >
+  <ul class="list-style-none">
+     <li>Il catalogo digitale per i tuoi prodotti</li>
+     <li>Template personalizzati</li>
+     <li>Importazione e sincronizzazione dei prodotti</li>
+     <li>Funziona sempre, anche offline!</li>
+   </ul>
+image: "img/slides/slide-depliant.png"

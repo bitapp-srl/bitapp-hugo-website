@@ -1,0 +1,10 @@
+weight: 1
+title: "Golearning"
+description: >
+  <ul class="list-style-none">
+    <li>Gestione corsi in aula e online</li>
+    <li>Gestione aule e calendario</li>
+    <li>Smart check-in</li>
+    <li>E-Learning SCORM e xAPI</li>
+  </ul>
+image: "img/slides/slide-golearning.png"

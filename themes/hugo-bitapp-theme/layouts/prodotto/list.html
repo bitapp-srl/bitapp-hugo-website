@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                      
+                             {{.Content}}
+                          
+						  
+
+
+ 
+
+						<div class="container lista">
+
+            
+
+						{{ range .Data.Pages }}
+						<div style="overflow:auto; margin-bottom:5em;">
+						<div class="col-md-6">  
+							<h2>{{.Title}}</h2>
+							<p class="giustificato">{{ .Content }}</p>
+												
+							<p><a href="{{ .Permalink }}" target="_blank" class="vai">Scopri di più</a></p>
+												
+						</div>  
+						<div class="col-md-6">  
+							{{ if .Params.Link }}<a href="{{ .Params.Link }}" target="_blank">{{ end }}
+								<img class="img-responsive" alt="" src="{{ .Params.Image | absURL }}">
+							{{ if .Params.Link }}</a>{{ end }}
+						</div>  
+						
+						<hr class="riga" />
+						</div>
+						{{ end }}					  
+						  
+						  
+						  
+						  
+                        </div>
+
+					</div>
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+
+
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

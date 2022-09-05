@@ -1,0 +1,16 @@
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titolo-video">{{ .Title }}</h1>
+				<div class="logo-video">
+				<a class="navbar-brand home" href="{{ .Site.BaseURL }}">
+						<img src="{{ .Site.BaseURL }}img/logo-bitapp-CR-video.jpg" alt="{{ .Title }} logo" class="hidden-xs hidden-sm">
+						<img src="{{ .Site.BaseURL }}img/logo-bitapp-CR-video-small.jpg" alt="{{ .Title }} logo" class="visible-xs visible-sm">
+						<span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
+				</a>				
+				</div>
+            </div>
+        </div>
+    </div>
+</div>

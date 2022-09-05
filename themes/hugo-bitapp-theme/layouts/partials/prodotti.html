@@ -1,0 +1,50 @@
+{{ if isset .Site.Params "prodotti" }}
+{{ if .Site.Params.prodotti.enable }}
+{{ if gt (len .Site.Data.prodotti) 0 }}
+<section class="bar background-pentagon no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+			
+			
+			                <p class="lead">
+                  {{ .Site.Params.prodotti.subtitle | markdownify }}
+                </p>
+			
+			
+			
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.prodotti.title }}</h2>
+                </div>
+
+
+
+                <!-- *** prodotti CAROUSEL *** -->
+
+                <ul class="owl-carousel testimonials same-height-row">
+                    {{ range .Site.Data.prodotti }}
+                    <li class="item">
+                        <div class="testimonial same-height-always">
+						
+						<img class="img-responsive" alt="" src="{{ .prodottoimg | absURL }}">
+						
+                            <div class="text">
+                                <h3>{{ .denominazione | markdownify }}</h3>
+								<p>{{ .sottotitolo }}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+                <!-- /.owl-carousel -->
+
+                <!-- *** prodotti CAROUSEL END *** -->
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}
+{{ end }}

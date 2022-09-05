@@ -1,0 +1,9 @@
+weight: 3
+title: "WeBus"
+description: >
+  <ul class="list-style-none">
+    <li>Info in tempo reale su orari di bus e treni</li>
+    <li>Avvisi aggiornati sulle variazioni del servizio (scioperi, deviazioni) con notifiche push personalizzabili</li>
+    <li>Mappa dei rivenditori di titoli di viaggio più vicini</li>
+  </ul>
+image: "img/slides/slide-webus.png"

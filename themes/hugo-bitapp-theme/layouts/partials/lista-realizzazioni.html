@@ -1,0 +1,38 @@
+{{ if isset .Site.Params "realizzazioni" }}
+{{ if .Site.Params.realizzazioni.enable }}
+{{ if gt (len .Site.Data.realizzazioni) 0 }}
+                
+
+
+
+                <!-- *** realizzazioni CAROUSEL *** -->
+
+				
+                    {{ range .Site.Data.realizzazioni }}
+					<div class="container lista">
+						<div class="col-md-6">	
+							<h2>{{ .denominazione | markdownify }}</h2>
+							<p class="giustificato">{{ .testoscheda | safeHTML }}</p>					
+							{{ if .link }}
+								<p><a href="{{ .link }}" target="_blank" class="vai">Scopri di più</a></p>
+							{{ end }}					
+						</div>	
+						<div class="col-md-6">		
+							{{ if .link }}
+							  <a href="{{ .link }}" target="_blank">
+								<img class="img-responsive" alt="" src="{{ .imgscheda | absURL }}">
+							  </a>
+							{{ else }}
+							  <img class="img-responsive" alt="" src="{{ .imgscheda | absURL }}">
+							{{ end }}
+						</div>	
+					</div>
+					<hr class="riga" />
+                    {{ end }}
+				
+                <!-- /.owl-carousel -->
+
+<!-- /.bar -->
+{{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,11 @@
+weight: 2
+title: "Tbus"
+description: >
+  <ul class="list-style-none">
+    <li>Orari in tempo reale</li>
+    <li>Fermate e destinazioni preferite</li>
+    <li>Cartoline e punti di interesse della città</li>
+    <li>Calcolo di CO2 risparmiata</li>
+    <li>Calcolo percorso e tante funzionalità in quest'app per il trasporto pubblico</li>
+  </ul>
+image: "img/slides/slide-tbus.png"

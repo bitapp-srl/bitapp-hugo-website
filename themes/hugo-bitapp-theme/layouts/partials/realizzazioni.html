@@ -1,0 +1,53 @@
+{{ if isset .Site.Params "realizzazioni" }}
+{{ if .Site.Params.realizzazioni.enable }}
+{{ if gt (len .Site.Data.realizzazioni) 0 }}
+<section class="bar background-pentagon no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+			
+			    <div class="lead">{{ .Site.Params.realizzazioni.subtitle | markdownify }}</div>
+			
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.realizzazioni.title }}</h2>
+                </div>
+
+
+
+                <!-- *** realizzazioni CAROUSEL *** -->
+
+                <ul class="owl-carousel testimonials same-height-row">
+                    {{ range .Site.Data.realizzazioni }}
+                    <li class="item">
+                        <div class="testimonial same-height-always">
+						
+							{{ if .link }}
+							  <a href="{{ .link }}" target="_blank">
+								<img class="img-responsive" alt="" src="{{ .realizzazioneimg | absURL }}">
+							  </a>
+							{{ else }}
+							  <img class="img-responsive" alt="" src="{{ .realizzazioneimg | absURL }}">
+							{{ end }}						
+						
+						
+						
+                            <div class="text">
+                                <h3>{{ .denominazione | markdownify }}</h3>
+								<p>{{ .sottotitolo }}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+                <!-- /.owl-carousel -->
+
+                <!-- *** realizzazioni CAROUSEL END *** -->
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}
+{{ end }}

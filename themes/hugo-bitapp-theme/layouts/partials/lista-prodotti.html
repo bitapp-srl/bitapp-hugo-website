@@ -1,0 +1,38 @@
+{{ if isset .Site.Params "prodotti" }}
+{{ if .Site.Params.prodotti.enable }}
+{{ if gt (len .Site.Data.prodotti) 0 }}
+
+                
+
+
+                <!-- *** prodotti CAROUSEL *** -->
+
+				
+                    {{ range .Site.Data.prodotti }}
+					<div class="container lista">
+						<div class="col-md-6">	
+							<h2>{{ .denominazione | markdownify }}</h2>
+							<p class="giustificato">{{ .testoscheda | markdownify }}</p>
+							{{ if .link }}
+								<p><a href="{{ .link }}" target="_blank" class="vai">Scopri di più</a></p>
+							{{ end }}
+						</div>	
+						<div class="col-md-6">	
+							{{ if .link }}
+							  <a href="{{ .link }}" target="_blank">
+								<img class="img-responsive" alt="" src="{{ .imgscheda | absURL }}">
+							  </a>
+							{{ else }}
+							  <img class="img-responsive" alt="" src="{{ .imgscheda | absURL }}">
+							{{ end }}
+						</div>	
+					</div>
+					<hr class="riga" />
+                    {{ end }}
+				
+                <!-- /.owl-carousel -->
+
+<!-- /.bar -->
+{{ end }}
+{{ end }}
+{{ end }}

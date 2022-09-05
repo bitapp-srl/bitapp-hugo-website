@@ -1,0 +1,7 @@
+denominazione: "Corrente"
+sottotitolo: "Il nuovo carsharing a Bologna"
+link-pagina: "/"
+realizzazioneimg: "img/realizzazioni/scheda/corrente.png"
+testoscheda: "Realizzazione con tecnologia <a href=\"https://gohugo.io/\" target=\"_blank\" title=\"vai al sito\">Hugo</a> del sito corrente.bo.it, sito ufficiale del nuovo servizio di carsharing di Bologna. Deploy tramite metodologia Continuous Integration. Graphic design concept Sdb Bologna."
+imgscheda: "img/realizzazioni/scheda/corrente.png"
+link: "https://corrente.bo.it"
